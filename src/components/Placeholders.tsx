@@ -211,7 +211,7 @@ export function SocialProof() {
                         {/* Veritasium */}
                         <StaggerItem>
                             <a href="https://www.youtube.com/@veritasium" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-4 group cursor-pointer">
-                                <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg group-hover:scale-105 transition-transform duration-500 grayscale-0 md:grayscale md:group-hover:grayscale-0 ring-2 ring-transparent group-hover:ring-spark-orange/20">
+                                <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300 ring-2 ring-transparent group-hover:ring-spark-orange/20">
                                     <img
                                         src="/image/veritasium_logo.jpg"
                                         alt="Veritasium"
@@ -225,7 +225,7 @@ export function SocialProof() {
                         {/* 3Blue1Brown */}
                         <StaggerItem>
                             <a href="https://www.youtube.com/@3blue1brown" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-4 group cursor-pointer">
-                                <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg group-hover:scale-105 transition-transform duration-500 grayscale-0 md:grayscale md:group-hover:grayscale-0 ring-2 ring-transparent group-hover:ring-spark-orange/20">
+                                <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300 ring-2 ring-transparent group-hover:ring-spark-orange/20">
                                     <img
                                         src="/image/3blue1brown_logo.jpg"
                                         alt="3Blue1Brown"
@@ -239,7 +239,7 @@ export function SocialProof() {
                         {/* Welch Labs */}
                         <StaggerItem>
                             <a href="https://www.youtube.com/@WelchLabsVideo" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-4 group cursor-pointer">
-                                <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg group-hover:scale-105 transition-transform duration-500 grayscale-0 md:grayscale md:group-hover:grayscale-0 ring-2 ring-transparent group-hover:ring-spark-orange/20">
+                                <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300 ring-2 ring-transparent group-hover:ring-spark-orange/20">
                                     <img
                                         src="/image/welchlabs_logo.jpg"
                                         alt="Welch Labs"

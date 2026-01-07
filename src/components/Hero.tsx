@@ -80,7 +80,7 @@ export function Hero() {
                     transition={{ duration: 0.8, delay: 0.7 }}
                     className="text-lg md:text-xl text-gray-200 mb-8 md:mb-10 font-medium max-w-2xl mx-auto"
                 >
-                    We localize, launch, and run your YouTube videos in new languages—end to end.
+                    We localize, launch, and run your YouTube videos in new languages—<span className="whitespace-nowrap">end to end.</span>
                 </motion.p>
 
                 <motion.div
