@@ -7,8 +7,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, BookOpen, Globe } from "lucide-react";
 import { StaggerContainer, StaggerItem } from "@/components/Stagger";
+import { useCareerModal } from "@/components/CareerModal";
 
 export default function ResearchPage() {
+    const { openCareerModal } = useCareerModal();
     return (
         <main className="min-h-screen bg-white">
             <Navbar />
@@ -226,10 +228,10 @@ export default function ResearchPage() {
 
                         <div className="mt-16 text-center">
                             <p className="text-gray-500 mb-6 font-medium">Interested in joining our research team?</p>
-                            <Link href="mailto:jaeseokchung@cinelingo-labs.com" className="inline-flex items-center gap-2 text-spark-orange font-bold hover:underline">
+                            <button onClick={openCareerModal} className="inline-flex items-center gap-2 text-spark-orange font-bold hover:underline">
                                 <span>Join Us</span>
                                 <ArrowUpRight size={18} />
-                            </Link>
+                            </button>
                         </div>
                     </FadeIn>
                 </div>

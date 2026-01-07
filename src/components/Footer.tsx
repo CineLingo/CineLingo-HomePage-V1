@@ -7,7 +7,8 @@ export function Footer() {
     return (
         <footer className="bg-black text-white py-12 md:py-20 relative overflow-hidden">
             {/* Watermark Background - visual flair */}
-            <div className="absolute -right-20 -bottom-20 w-96 h-96 opacity-10 pointer-events-none select-none">
+            {/* Watermark Background - visual flair */}
+            <div className="absolute -right-32 -bottom-32 w-[600px] h-[600px] opacity-10 pointer-events-none select-none">
                 <Image
                     src="/image/cinelingo_logo_watermark_white.svg"
                     alt=""
@@ -21,7 +22,7 @@ export function Footer() {
 
                     {/* Brand Column */}
                     <div className="text-center md:text-left">
-                        <div className="relative h-10 w-48 mx-auto md:mx-0 mb-6">
+                        <div className="relative h-20 w-80 mx-auto md:mx-0 mb-6">
                             <Image
                                 src="/image/cinelingo_wordmark_white.svg"
                                 alt="Cinelingo"
