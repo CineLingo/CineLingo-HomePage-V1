@@ -57,7 +57,7 @@ export function Process() {
 
                     {/* Three-step flow: Text only with subtext */}
                     <div className="max-w-6xl mx-auto">
-                        <StaggerContainer className="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 md:gap-8">
+                        <StaggerContainer className="flex flex-col md:flex-row justify-between items-center md:items-center gap-12 md:gap-8">
                             {/* Connect */}
                             <StaggerItem className="flex-1 text-center md:text-left">
                                 <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-3 tracking-tight">Connect</div>
