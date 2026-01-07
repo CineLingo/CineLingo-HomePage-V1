@@ -39,12 +39,12 @@ export function Footer() {
                         <div className="flex flex-col gap-4">
                             <span className="text-white font-bold uppercase tracking-widest text-xs">Company</span>
                             <Link href="/about" className="hover:text-white transition-colors">About Us</Link>
-                            <Link href="#" className="hover:text-white transition-colors">Careers</Link>
+                            <Link href="/career" className="hover:text-white transition-colors">Careers</Link>
                         </div>
                         <div className="flex flex-col gap-4">
                             <span className="text-white font-bold uppercase tracking-widest text-xs">Legal</span>
-                            <Link href="#" className="hover:text-white transition-colors">Privacy</Link>
-                            <Link href="#" className="hover:text-white transition-colors">Terms</Link>
+                            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+                            <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
                         </div>
                     </div>
                 </div>

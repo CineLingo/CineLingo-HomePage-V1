@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { X, Loader2, CheckCircle2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -232,8 +234,10 @@ export function DemoModalProvider({ children }: { children: ReactNode }) {
                                             )}
                                         </button>
 
-                                        <p className="text-xs text-gray-400 text-center mt-4">
-                                            No credit card required. Your data is safe with us.
+                                        <p className="text-xs text-gray-400 text-center mt-4 leading-relaxed">
+                                            By contacting us, you agree to our <Link href="/privacy" className="underline hover:text-gray-600" target="_blank">Privacy Policy</Link>.
+                                            <br />
+                                            (Optional) Request deletion anytime at <a href="mailto:privacy@cinelingo-labs.com" className="underline hover:text-gray-600">privacy@cinelingo-labs.com</a>.
                                         </p>
                                     </form>
                                 )}

@@ -94,6 +94,9 @@ export function Navbar() {
                         <Link href="/research" className="hover:text-black transition-colors">
                             Research
                         </Link>
+                        <Link href="/career" className="hover:text-black transition-colors">
+                            Career
+                        </Link>
                     </div>
 
                     <div className="flex items-center gap-4">
@@ -149,6 +152,9 @@ export function Navbar() {
 
                         <Link href="/research" onClick={() => setMobileMenuOpen(false)} className="border-b border-gray-100 pb-4">
                             Research
+                        </Link>
+                        <Link href="/career" onClick={() => setMobileMenuOpen(false)} className="border-b border-gray-100 pb-4">
+                            Career
                         </Link>
 
                         <button
