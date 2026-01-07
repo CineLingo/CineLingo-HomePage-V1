@@ -23,8 +23,8 @@ export default function Home() {
       <FeaturedVideos />
       <SafetyLogic />
       <Process />
-      <ManagementScope />
       <SimpleDeal />
+      <ManagementScope />
       <FreeDemo />
       <SocialProof />
       <FAQ />

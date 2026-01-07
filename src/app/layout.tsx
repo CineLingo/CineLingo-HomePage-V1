@@ -29,6 +29,7 @@ export const metadata: Metadata = {
 };
 
 import { DemoModalProvider } from "@/components/DemoModal";
+import { CareerModalProvider } from "@/components/CareerModal";
 
 export default function RootLayout({
   children,
@@ -42,7 +43,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <DemoModalProvider>
-          {children}
+          <CareerModalProvider>
+            {children}
+          </CareerModalProvider>
         </DemoModalProvider>
       </body>
     </html>

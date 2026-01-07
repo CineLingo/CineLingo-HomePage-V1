@@ -87,7 +87,7 @@ export default function TermsPage() {
                             <section>
                                 <h3 className="text-2xl font-bold text-gray-900 mb-4">10) Contact</h3>
                                 <p>
-                                    <Link href="mailto:jaeseokchung@cinelingo-labs.com" className="text-spark-orange hover:underline">jaeseokchung@cinelingo-labs.com</Link>
+                                    <Link href="mailto:support@cinelingo-labs.com" className="text-spark-orange hover:underline">support@cinelingo-labs.com</Link>
                                 </p>
                             </section>
                         </div>

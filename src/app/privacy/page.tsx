@@ -86,7 +86,7 @@ export default function PrivacyPage() {
                                 <h3 className="text-2xl font-bold text-gray-900 mb-4">6) Your choices and rights</h3>
                                 <p>
                                     Depending on your location, you may have rights to request access, correction, or deletion of your information.
-                                    To make a request, contact: <Link href="mailto:jaeseokchung@cinelingo-labs.com" className="text-spark-orange hover:underline">privacy@cinelingo-labs.com</Link>
+                                    To make a request, contact: <Link href="mailto:support@cinelingo-labs.com" className="text-spark-orange hover:underline">support@cinelingo-labs.com</Link>
                                 </p>
                             </section>
 
@@ -110,7 +110,7 @@ export default function PrivacyPage() {
                                 <p>
                                     Questions about this Privacy Policy:
                                     <br />
-                                    <Link href="mailto:jaeseokchung@cinelingo-labs.com" className="text-spark-orange hover:underline">jaeseokchung@cinelingo-labs.com</Link>
+                                    <Link href="mailto:support@cinelingo-labs.com" className="text-spark-orange hover:underline">support@cinelingo-labs.com</Link>
                                 </p>
                             </section>
                         </div>

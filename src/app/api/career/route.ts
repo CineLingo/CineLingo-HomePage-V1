@@ -4,12 +4,12 @@ import nodemailer from 'nodemailer';
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { youtubeUrl, companyName, countryCode, contactNumber, email } = body;
+    const { name, email, link, message } = body;
 
     // Validate required fields
-    if (!youtubeUrl || !email) {
+    if (!name || !email) {
       return NextResponse.json(
-        { error: 'YouTube URL and Email are required' },
+        { error: 'Name and Email are required' },
         { status: 400 }
       );
     }
@@ -29,32 +29,28 @@ export async function POST(request: Request) {
     const mailOptions = {
       from: process.env.SMTP_USER, // Sender address
       to: 'support@cinelingo-labs.com', // Recipient address
-      subject: `[New Demo Request] from ${companyName || 'Potential Client'}`,
+      subject: `[Career Application] from ${name}`,
       html: `
         <div style="font-family: sans-serif; padding: 20px; color: #333;">
-          <h2 style="color: #FD5A1E;">New Demo Request</h2>
-          <p>You have received a new Get Free Demo request from the landing page.</p>
+          <h2 style="color: #FD5A1E;">New Career Application</h2>
+          <p>You have received a new career application from the website.</p>
           
           <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
             <tr>
-              <td style="padding: 10px; border-bottom: 1px solid #ddd; font-weight: bold; width: 150px;">YouTube URL:</td>
-              <td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="${youtubeUrl}">${youtubeUrl}</a></td>
-            </tr>
-            <tr>
-              <td style="padding: 10px; border-bottom: 1px solid #ddd; font-weight: bold;">Company Name:</td>
-              <td style="padding: 10px; border-bottom: 1px solid #ddd;">${companyName || 'N/A'}</td>
-            </tr>
-            <tr>
-              <td style="padding: 10px; border-bottom: 1px solid #ddd; font-weight: bold;">Contact Number:</td>
-              <td style="padding: 10px; border-bottom: 1px solid #ddd;">(${countryCode}) ${contactNumber || 'N/A'}</td>
+              <td style="padding: 10px; border-bottom: 1px solid #ddd; font-weight: bold; width: 150px;">Name:</td>
+              <td style="padding: 10px; border-bottom: 1px solid #ddd;">${name}</td>
             </tr>
             <tr>
               <td style="padding: 10px; border-bottom: 1px solid #ddd; font-weight: bold;">Email:</td>
               <td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="mailto:${email}">${email}</a></td>
             </tr>
             <tr>
-              <td style="padding: 10px; border-bottom: 1px solid #ddd; font-weight: bold;">Message:</td>
-              <td style="padding: 10px; border-bottom: 1px solid #ddd; white-space: pre-wrap;">${body.message || 'N/A'}</td>
+              <td style="padding: 10px; border-bottom: 1px solid #ddd; font-weight: bold;">Link (LinkedIn/Resume):</td>
+              <td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="${link}">${link || 'N/A'}</a></td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; border-bottom: 1px solid #ddd; font-weight: bold;">Introduction:</td>
+              <td style="padding: 10px; border-bottom: 1px solid #ddd; white-space: pre-wrap;">${message || 'N/A'}</td>
             </tr>
           </table>
           

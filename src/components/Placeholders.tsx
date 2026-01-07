@@ -57,34 +57,34 @@ export function Process() {
 
                     {/* Three-step flow: Text only with subtext */}
                     <div className="max-w-6xl mx-auto">
-                        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 md:gap-8">
+                        <StaggerContainer className="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 md:gap-8">
                             {/* Connect */}
-                            <div className="flex-1 text-center md:text-left">
+                            <StaggerItem className="flex-1 text-center md:text-left">
                                 <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-3 tracking-tight">Connect</div>
                                 <p className="text-gray-500 text-lg md:text-xl leading-relaxed">A quick chat about your channel goals.</p>
-                            </div>
+                            </StaggerItem>
 
                             {/* Arrow */}
                             <div className="hidden md:block text-gray-300 text-4xl font-light transform scale-y-75">→</div>
 
                             {/* Partner */}
-                            <div className="flex-1 text-center md:text-left">
+                            <StaggerItem className="flex-1 text-center md:text-left">
                                 <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-3 tracking-tight">Partner</div>
                                 <p className="text-gray-500 text-lg md:text-xl leading-relaxed">A simple revenue-share agreement.</p>
-                            </div>
+                            </StaggerItem>
 
                             {/* Arrow */}
                             <div className="hidden md:block text-gray-300 text-4xl font-light transform scale-y-75">→</div>
 
                             {/* Relax */}
-                            <div className="flex-1 text-center md:text-left">
+                            <StaggerItem className="flex-1 text-center md:text-left">
                                 <div className="text-3xl md:text-4xl font-bold text-spark-orange mb-3 tracking-tight">Relax</div>
                                 <p className="text-gray-500 text-lg md:text-xl leading-relaxed">
                                     We launch and manage everything globally.
                                     <span className="block text-sm text-gray-400 mt-1">You just watch the numbers grow.</span>
                                 </p>
-                            </div>
-                        </div>
+                            </StaggerItem>
+                        </StaggerContainer>
                     </div>
                 </FadeIn>
             </div>
@@ -129,23 +129,38 @@ export function ManagementScope() {
 
 export function SimpleDeal() {
     return (
-        <section id="pricing" className="py-20 md:py-32 bg-white border-y border-gray-100">
-            <div className="container mx-auto px-4 text-center max-w-4xl relative z-10">
+        <section id="pricing" className="relative min-h-[600px] flex items-center overflow-hidden">
+            {/* Background Image - Full Bleed */}
+            <div className="absolute inset-0 z-0">
+                <img
+                    src="/image/grow_together.png"
+                    alt="Team reviewing dashboard"
+                    className="w-full h-full object-cover object-center"
+                />
+                {/* Gradient Overlay for text readability */}
+                <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/60 to-transparent" />
+            </div>
+
+            <div className="container mx-auto px-4 md:pl-20 relative z-10">
                 <FadeIn>
-                    <div className="flex flex-col items-center">
-                        {/* 1. Small line above */}
-                        <div className="text-xl md:text-2xl text-gray-500 mb-8 md:mb-12 font-medium">No upfront cost.</div>
+                    <div className="max-w-2xl py-20 text-left">
+                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight leading-none drop-shadow-sm">
+                            Grow <br /> Together
+                        </h2>
 
-                        {/* 2. Large centered number */}
-                        <div className="text-[6rem] md:text-[14rem] font-black text-gray-900 leading-none tracking-tighter mb-12 md:mb-16">
-                            50 <span className="text-gray-300 font-light">/</span> 50
+                        <div className="flex flex-wrap gap-3 mb-10">
+                            <span className="px-5 py-2.5 bg-white/80 backdrop-blur-md text-gray-900 rounded-full text-sm md:text-base font-bold border border-white/50 shadow-sm">
+                                No upfront cost
+                            </span>
+                            <span className="px-5 py-2.5 bg-white/80 backdrop-blur-md text-gray-900 rounded-full text-sm md:text-base font-bold border border-white/50 shadow-sm">
+                                Revenue share
+                            </span>
                         </div>
 
-                        {/* 3. Small supporting line below */}
-                        <div className="text-lg md:text-xl text-gray-500 max-w-2xl leading-relaxed">
-                            We split the revenue. <br className="hidden md:block" />
-                            We only grow when your localized channel grows.
-                        </div>
+                        <p className="text-lg md:text-xl text-gray-800 font-medium leading-relaxed max-w-lg drop-shadow-sm">
+                            We earn only when your localized channel earns. <br className="hidden md:block" />
+                            Same direction, same incentives.
+                        </p>
                     </div>
                 </FadeIn>
             </div>
@@ -253,34 +268,34 @@ export function SafetyLogic() {
                         <h2 className="text-3xl md:text-5xl font-bold mb-8 text-gray-900">Global Reach, No Interference.</h2>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+                    <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
                         {/* Column 1: Original */}
-                        <div className="text-center md:text-right order-2 md:order-1">
+                        <StaggerItem className="text-center md:text-right order-2 md:order-1">
                             <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 uppercase tracking-widest">Original Channel</h3>
                             <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-medium">
                                 Your home algorithm stays pure. <br />
                                 We never touch your source.
                             </p>
-                        </div>
+                        </StaggerItem>
 
                         {/* Middle: Visual Metaphor (Prism) */}
-                        <div className="relative h-64 md:h-80 w-full flex items-center justify-center order-1 md:order-2">
+                        <StaggerItem className="relative h-64 md:h-80 w-full flex items-center justify-center order-1 md:order-2">
                             <img
                                 src="/image/safety_prism.png"
                                 alt="Prism Metaphor"
                                 className="w-full h-full object-contain drop-shadow-2xl mix-blend-multiply"
                             />
-                        </div>
+                        </StaggerItem>
 
                         {/* Column 2: Localized */}
-                        <div className="text-center md:text-left order-3 md:order-3">
+                        <StaggerItem className="text-center md:text-left order-3 md:order-3">
                             <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 uppercase tracking-widest">Localized Channels</h3>
                             <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-medium">
-                                We launch mostly new channels. <br />
+                                We launch separate localized channels. <br />
                                 It’s like a second storefront.
                             </p>
-                        </div>
-                    </div>
+                        </StaggerItem>
+                    </StaggerContainer>
                 </FadeIn>
             </div>
         </section>
@@ -296,7 +311,8 @@ export function FAQ() {
                     <StaggerContainer className="space-y-6">
                         {[
                             { q: "How much do I have to work?", a: "After the initial setup, virtually zero. We are your dedicated international team, not a tool you have to learn." },
-                            { q: "Why 50:50?", a: "Because we invest our own resources, time, and marketing budget into your growth. We only win when you win." },
+                            { q: "Is there really no upfront cost?", a: "Yes—there are no setup fees or fixed monthly charges. We work on a revenue-share model and earn only when your localized channel earns." },
+                            { q: "Do you upload to my main channel?", a: "No. We create and operate separate channels for each language (e.g., YourName Español). This allows us to optimize for local algorithms without affecting your main channel." },
                             { q: "Is it AI or Human?", a: "It’s the best of both. We use cutting-edge tech guided by expert ears to ensure your \"vibe\" is never lost in translation." }
                         ].map((item, i) => (
                             <StaggerItem key={i} className="bg-gray-50 p-6 rounded-2xl hover:bg-gray-100 transition-colors cursor-default hover:shadow-md hover:-translate-y-1 transition-all duration-300">
@@ -333,7 +349,7 @@ export function FinalCTA() {
                     <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white tracking-tight drop-shadow-sm">
                         Don’t let your content <br /> stop at the border.
                     </h2>
-                    <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-2xl mx-auto font-medium shadow-black/5 drop-shadow-sm">
+                    <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto font-medium shadow-black/5 drop-shadow-sm">
                         Join the world’s top creators and start your global journey today.
                     </p>
                     <button

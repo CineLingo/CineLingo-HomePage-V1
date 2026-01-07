@@ -66,7 +66,7 @@ export function Navbar() {
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
-                        <Link href="#" className="hover:text-black transition-colors">
+                        <Link href="/" className="hover:text-black transition-colors">
                             Home
                         </Link>
                         <Link href="/about" className="hover:text-black transition-colors">

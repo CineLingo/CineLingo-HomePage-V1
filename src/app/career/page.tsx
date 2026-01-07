@@ -7,8 +7,11 @@ import { StaggerContainer, StaggerItem } from "@/components/Stagger";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, Lock } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useCareerModal } from "@/components/CareerModal";
 
 export default function CareerPage() {
+    const { openCareerModal } = useCareerModal();
+
     return (
         <main className="min-h-screen bg-white">
             <Navbar />
@@ -65,12 +68,12 @@ export default function CareerPage() {
                             </div>
 
                             <div className="mt-auto">
-                                <Link
-                                    href="mailto:jaeseokchung@cinelingo-labs.com?subject=Application for Generative Speech Engineer"
+                                <button
+                                    onClick={openCareerModal}
                                     className="w-full block text-center bg-spark-orange text-white font-bold py-4 rounded-xl hover:bg-orange-600 transition-colors mb-4"
                                 >
                                     Contact us
-                                </Link>
+                                </button>
                                 <p className="text-sm text-gray-400 text-center leading-relaxed">
                                     No formal application — just send what you have.<br />
                                     Optional: LinkedIn, CV, GitHub/paper link, or short intro.
@@ -170,13 +173,13 @@ export default function CareerPage() {
 
                                     {/* Action Button on Overlay */}
                                     <div className="absolute bottom-8 left-0 right-0 px-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
-                                        <Link
-                                            href="mailto:jaeseokchung@cinelingo-labs.com?subject=Interest in Future Roles"
+                                        <button
+                                            onClick={openCareerModal}
                                             className="w-full flex items-center justify-center gap-2 bg-white border border-gray-200 text-gray-600 font-bold py-3 rounded-xl hover:bg-gray-50 hover:border-gray-300 transition-all shadow-sm hover:shadow-md"
                                         >
                                             <span>Join talent pool</span>
                                             <ArrowUpRight size={16} />
-                                        </Link>
+                                        </button>
                                         <p className="text-xs text-gray-400 text-center mt-3 font-medium">
                                             Optional: send a short intro + relevant work.
                                         </p>
