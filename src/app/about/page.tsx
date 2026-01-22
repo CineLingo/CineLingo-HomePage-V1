@@ -39,14 +39,23 @@ export default function AboutPage() {
                         </div>
                         <div className="space-y-12 text-lg md:text-xl text-gray-700 leading-relaxed font-medium">
                             <p>
-                                CineLingo is led by <span className="font-bold text-gray-900">Mingi Kwon</span>, <span className="font-bold text-gray-900">Jaeseok Jeong</span>, and a team of creative individuals with a shared passion. We are backed by <span className="font-bold text-gray-900">Youngjung Uh</span> at Yonsei University, <span className="font-bold text-gray-900">Yongjae Lee</span> at UW-Madison and a collection of founders and investors.
+                                CineLingo is built by people who genuinely care about content — not just how far it travels, but what it feels like when it reaches someone new.
                             </p>
                             <p>
-                                We have offices in Seoul, Korea. Our team members have long-tenured careers in machine learning, software, and entertainment.
+                                We help meaningful work cross languages and cultures without losing its <span className="font-bold text-gray-900">vibe or intent</span>. Our goal is simple: let great content spread widely, while staying true to the feeling that made it worth sharing in the first place.
+                            </p>
+                            <p>
+
+
+                                CineLingo is led by <span className="font-bold text-gray-900">Mingi Kwon</span>, <span className="font-bold text-gray-900">Jaeseok Jeong</span>, and a team of creative individuals with a shared passion. We are supported by researchers and founders who believe in thoughtful technology and long-term creative value.
+                                {/* We are backed by <span className="font-bold text-gray-900">Youngjung Uh</span> at Yonsei University, <span className="font-bold text-gray-900">Yongjae Lee</span> at UW-Madison and a collection of founders and investors. */}
+                            </p>
+                            <p>
+                                Based in Seoul, our team brings experience from machine learning, software, and entertainment — united by a deep respect for creators and the care behind their work.
                             </p>
                             <div className="pt-8 border-t border-gray-100">
                                 <p className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight italic">
-                                    "We strongly believe that a small, focused team with a clear vision can build great things."
+                                    "We believe a small, focused team with a clear vision can help great content reach the world — without losing what makes it special."
                                 </p>
                             </div>
                         </div>
